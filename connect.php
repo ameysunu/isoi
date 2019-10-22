@@ -1,14 +1,14 @@
 <?php
 
-$fname=$_POST['first_name'];
-$lname=$_POST['last_name'];
-$rnumber=$_POST['reg_number'];
-$number=$_POST['phone'];
-$email=$_POST['email'];
+$fname = $_POST['first_name'];
+$lname = $_POST['last_name'];
+$rnumber = $_POST['reg_number'];
+$number = $_POST['phone'];
+$email = $_POST['email'];
 
-$data=$fname."  ".$lname."  ".$rnumber."  ".$number."  ".$email;
-$file="file.csv";
-file_put_contents($file, $data.PHP_EOL,FILE_APPEND);
+$data = $fname . "  " . $lname . "  " . $rnumber . "  " . $number . "  " . $email;
+$file = "file.csv";
+file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
 ?>
 <!-- HTML File -->
 <!DOCTYPE html>
@@ -40,22 +40,24 @@ file_put_contents($file, $data.PHP_EOL,FILE_APPEND);
 </head>
 
 <body bgcolor="#000000">
-       
-       <div class="container">
-            <img src="am.png" style="width:10%">
-           <div class="centered"><h1> TECH-IT-OUT</h1></div>
-       </div>
+
+    <div class="container">
+        <img src="am.png" style="width:10%">
+        <div class="centered">
+            <h1> TECH-IT-OUT</h1>
+        </div>
+    </div>
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                        <center>
+                    <center>
                         <div class="p-t-15">
-                        <form  action="index.html" method="POST">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Go Back</button>
-</form>
+                            <form action="index.html" method="POST">
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Go Back</button>
+                            </form>
                         </div>
-                        </center>
+                    </center>
                     </form>
                 </div>
             </div>
